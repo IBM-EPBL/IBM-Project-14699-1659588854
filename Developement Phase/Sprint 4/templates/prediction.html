@@ -1,0 +1,95 @@
+
+
+<html>
+<style>
+    #myTextBox1 { margin-left: 40px; }
+    h1 {text-align: center;}
+    div {text-align: center;}
+    select {
+        maxlength :"4" size="4";
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+    }
+
+</style>
+<body>
+    <link rel="stylesheet" href="static/home.css">
+    <h1>Income Prediction Form</h1>
+
+<div>
+    <form action="/prediction" method="POST">
+
+        <label for="Gender">Gender</label>
+        <select id="Gender" name="Gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+        <br>
+
+        <label for="Married">Married</label>
+        <select id="Married" name="Married">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+
+        <label for="Dependents">Dependents</label>
+        <select id="Dependents" name="Dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br>
+
+        <label for="Education">Education</label>
+        <select id="Education" name="Education">
+            <option value="0">Graduate</option>
+            <option value="1">Not Graduate</option>
+        </select>
+        <br>
+
+        <label for="Self_Employed">Self_Employed</label>
+        <select id="Self_Employed" name="Self_Employed">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br>
+
+        <label for="ApplicantIncome">ApplicantIncome</label>
+        <input type="text" id="ApplicantIncome" name="ApplicantIncome"> 
+        <br><br>
+
+        <label for="CoapplicantIncome">CoapplicantIncome</label>
+        <input type="text" id="CoapplicantIncome" name="CoapplicantIncome"> 
+        <br><br>
+
+        <label for="LoanAmount">LoanAmount</label>
+        <input type="text" id="LoanAmount" name="LoanAmount"> 
+        <br><br>
+
+        <label for="Loan_Amount_Term">Loan_Amount_Term</label>
+        <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term"> 
+        <br><br>
+
+        <label for="Credit_History">Credit_History</label>
+        <input type="text" id="Credit_History" name="Credit_History"> 
+        <br><br>
+
+        <label for="Property_Area">Property_Area</label>
+        <select id="Property_Area" name="Property_Area">
+            <option value="0">Urban</option>
+            <option value="1">Rural</option>
+            <option value="2">Semiurban</option>
+        </select>
+        <br><br>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+</div>
+</body>
+</html>
+            
